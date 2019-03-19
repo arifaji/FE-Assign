@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+
+   <element>
+      <keyfield>name</keyfield>
+      <label>Name</label>  
+      <type>text</type>
+      <value>Arif Setyo</value>
+      <required>true</required>    
+   </element>
+
+   <element>
+      <keyfield>mmn</keyfield>
+      <label>Mother's Maiden Name</label>  
+      <type>text</type>
+      <value>Mikurin</value>
+      <required>true</required>    
+   </element>
+
+   <element>
+      <keyfield>birthdate</keyfield>
+      <label>Birthdate</label>
+      <type>date</type>  
+      <value>2009-11-12</value>
+      <required>true</required>         
+   </element>
+
+   <element>
+      <keyfield>age</keyfield>
+      <label>Age</label>
+      <type>number</type>  
+      <value>13</value>
+      <required>true</required>         
+   </element>
+
+   <element>
+      <keyfield>address</keyfield>
+      <label>Address</label>
+      <type>textarea</type>  
+      <value>Jakarta Selatan, RT.02 RW.03</value>
+      <required>true</required> 
+      <cols>50</cols>
+      <rows></rows>    
+   </element>
+
+   <element>
+      <keyfield>bankcabang</keyfield>
+      <label>Bank Cabang</label>
+      <required>false</required>
+      <value>kcp-bekasi</value>
+      <type>select</type>
+      <options>
+         <keyfield>kcp-jakarta</keyfield>
+         <label>KCP Jakarta</label>
+         <value>kcp-jakarta</value>
+      </options>
+      <options>
+         <keyfield>kcp-tangerang</keyfield>
+         <label>KCP Tangerang</label>
+         <value>kcp-tangerang</value>
+      </options>
+      <options>
+         <keyfield>kcp-bekasi</keyfield>
+         <label>KCP Bekasi</label>
+         <value>kcp-bekasi</value>
+      </options>
+         <options>
+         <keyfield>kcp-lampung</keyfield>
+         <label>KCP Lampung</label>
+         <value>kcp-lampung</value>
+      </options>
+   </element>
+
+   <element>
+      <keyfield>gender</keyfield>
+      <label>Jenis Kelamin</label>
+      <type>radio</type>
+      <value>male</value>
+      <required>false</required>
+      <options>
+         <keyfield>male</keyfield>
+         <label>Pria</label>
+         <name>gender</name>
+         <value>male</value>
+      </options>
+      <options>
+         <keyfield>female</keyfield>
+         <label>Wanita</label>
+         <name>gender</name>
+         <value>female</value>
+      </options>
+   </element>
+
+   <element>
+      <keyfield>kelengkapan</keyfield>
+      <label>Kelengkapan</label>
+      <type>checkbox</type>
+      <value>
+         <element>card-ktp</element>
+         <element>card-npwp</element>
+      </value>
+      <!-- <value>kcp-bekasi</value> -->
+      <required>true</required>
+      <options>
+         <keyfield>card-ktp</keyfield>
+         <label>KTP</label>
+         <value>card-ktp</value>
+      </options>
+      <options>
+         <keyfield>card-sim</keyfield>
+         <label>SIM</label>
+         <value>card-sim</value>
+      </options>
+      <options>
+         <keyfield>card-npwp</keyfield>
+         <label>NPWP</label>
+         <value>card-npwp</value>
+      </options>
+      <options>
+         <keyfield>card-bpjs</keyfield>
+         <label>BPJS</label>
+         <value>card-bpjs</value>
+      </options>
+   </element>
+
+   <element>
+      <keyfield>bank-card</keyfield>
+      <label>Pilih Kartumu</label>
+      <type>checkbox</type>
+      <value>
+         <element>card-atm</element>
+         <element>card-cc</element>
+      </value>
+      <required>false</required>
+      <options>
+         <keyfield>card-atm</keyfield>
+         <label>ATM</label>
+         <value>card-atm</value>
+      </options>
+      <options>
+         <keyfield>card-cc</keyfield>
+         <label>Credit Card</label>
+         <value>card-cc</value>
+      </options>
+      <options>
+         <keyfield>card-visa</keyfield>
+         <label>Visa Card</label>
+         <value>card-visa</value>
+      </options>
+      <options>
+         <keyfield>card-debet</keyfield>
+         <label>Debet Card</label>
+         <value>card-debet</value>
+      </options>
+   </element>
+
+</elements>

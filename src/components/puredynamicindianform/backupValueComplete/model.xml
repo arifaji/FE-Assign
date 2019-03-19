@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+
+   <element>
+      <keyfield>name</keyfield>
+      <label>Name</label>  
+      <type>text</type>
+      <value>Arif Setyo</value>
+      <required>true</required>    
+   </element>
+
+   <element>
+      <keyfield>age</keyfield>
+      <label>Age</label>
+      <type>number</type>  
+      <value>13</value>
+      <required>true</required>         
+   </element>
+
+   <element>
+      <keyfield>address</keyfield>
+      <label>Address</label>
+      <type>textarea</type>  
+      <value>Jakarta Selatan, RT.02 RW.03</value>
+      <required>false</required> 
+      <cols>50</cols>
+      <rows></rows>    
+   </element>
+
+   <element>
+      <keyfield>bankcabang</keyfield>
+      <label>Bank Cabang</label>
+      <required>false</required>
+      <!-- <value>kcp-bekasi</value> -->
+      <type>select</type>
+      <options>
+         <keyfield>kcp-jakarta</keyfield>
+         <label>KCP Jakarta</label>
+         <value>kcp-jakarta</value>
+      </options>
+      <options>
+         <keyfield>kcp-tangerang</keyfield>
+         <label>KCP Tangerang</label>
+         <value>kcp-tangerang</value>
+      </options>
+      <options>
+         <keyfield>kcp-bekasi</keyfield>
+         <label>KCP Bekasi</label>
+         <value>kcp-bekasi</value>
+      </options>
+         <options>
+         <keyfield>kcp-lampung</keyfield>
+         <label>KCP Lampung</label>
+         <value>kcp-lampung</value>
+      </options>
+   </element>
+
+   <element>
+      <keyfield>gender</keyfield>
+      <label>Jenis Kelamin</label>
+      <type>radio</type>
+      <value>male</value>
+      <required>false</required>
+      <options>
+         <keyfield>male</keyfield>
+         <label>Pria</label>
+         <name>gender</name>
+         <value>male</value>
+      </options>
+      <options>
+         <keyfield>female</keyfield>
+         <label>Wanita</label>
+         <name>gender</name>
+         <value>female</value>
+      </options>
+   </element>
+
+   <element>
+      <keyfield>cabangbang</keyfield>
+      <label>Cabang Bang</label>
+      <type>checkbox</type>
+      <value>
+         <element>kcp-bekasi</element>
+         <element>kcp-jakarta</element>
+      </value>
+      <!-- <value>kcp-bekasi</value> -->
+      <required>true</required>
+      <options>
+         <keyfield>kcp-jakarta</keyfield>
+         <label>KCP Jakarta</label>
+         <value>kcp-jakarta</value>
+      </options>
+      <options>
+         <keyfield>kcp-tangerang</keyfield>
+         <label>KCP Tangerang</label>
+         <value>kcp-tangerang</value>
+      </options>
+      <options>
+         <keyfield>kcp-bekasi</keyfield>
+         <label>KCP Bekasi</label>
+         <value>kcp-bekasi</value>
+      </options>
+      <options>
+         <keyfield>kcp-lampung</keyfield>
+         <label>KCP Lampung</label>
+         <value>kcp-lampung</value>
+      </options>
+   </element>
+
+</elements>

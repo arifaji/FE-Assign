@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Batas Suci Atas */
+
+// @media only screen and (max-width: 768px) {
+//   /* For mobile phones: */
+//   .inform {
+//     padding-right: 30px;
+//     padding-left: 12px;
+//     width: 95%;
+//     float: center;
+//   }
+// }
+
+@media only screen and (min-width: 1200px) {
+  /* For web : */
+  .inform {
+    float: left;
+    width: 49%;
+  }
+  .go-bottom {
+    // padding-left: 3%;
+    // margin-top: 50px;
+  }
+  .go-right {
+    // margin-top: 2%;
+    margin-left: 20px;
+  }
+}
+
+.inform {
+  // width: 45%;
+  // float: left;
+  // margin-left: 20px;
+  > div {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+/* Batas Suci Bawah */
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  text-align: left;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+textarea {
+  width: 100%;
+  // padding: 0px;
+  // margin: 5px 0 22px 0;
+  display: inline-block;
+  // border: none;
+  // background: #f1f1f1;
+}
+
+.form-group-radio,
+.form-group-checkbox {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="number"],
+input[type="date"],
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Batas Start Tooltip */
+/* Tooltip container */
+.tooltips {
+  position: relative;
+  display: inline-block;
+  // border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltips .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+
+  left: 100%;
+  margin-left: 10px;
+  // margin-top: -10px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltips .tooltiptext::after {
+  content: "";
+  position: absolute;
+  transform: rotate(90deg);
+  top: 15%;
+  right: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltips:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* Batas End Tooltip */

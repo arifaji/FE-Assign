@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form>
+    <rows>
+        <row>
+            <columns>
+                <column>
+                    <keyfield>name</keyfield>
+                    <label>Name</label>
+                    <type>text</type>
+                    <required>true</required>
+                </column>
+
+                <column>
+                    <keyfield>mmn</keyfield>
+                    <label>Mother's Maiden Name</label>
+                    <type>text</type>
+                    <required>true</required>
+                </column>
+            </columns>
+        </row> 
+
+        <row>
+            <columns>
+                <column>
+                    <keyfield>pob</keyfield>
+                    <label>Place of Birth</label>
+                    <type>text</type>
+                    <required>true</required>
+                </column>
+
+                <column>
+                    <keyfield>npwp</keyfield>
+                    <label>NPWP</label>
+                    <type>number</type>
+                    <required>true</required>
+                </column>
+            </columns>
+        </row>
+
+        <row>
+            <columns>
+                <column>
+                    <keyfield>dob</keyfield>
+                    <label>Date of Birth</label>
+                    <type>date</type>
+                    <required>true</required>
+                </column>
+
+                <column>
+                    <keyfield>mob</keyfield>
+                    <label>Phone Number</label>
+                    <type>number</type>
+                    <required>true</required>
+                </column>
+            </columns>
+        </row>
+
+        <row>
+            <columns>
+                <column>
+                    <keyfield>nik</keyfield>
+                    <label>NIK</label>
+                    <type>number</type>
+                    <required>true</required>
+                </column>
+            </columns>
+        </row>
+
+    </rows>
+
+    
+
+</form>

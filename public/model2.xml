@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+  <?xml-stylesheet type="text/xsl" href="ACSPIXMT.xsl" ?>
+
+  <IMPORT>
+  <ACSPIX Type="2106" SN="UI00650521" Ver="3.05.01"/>
+  <DEVICE  Name="Performa" SN="04666273"  ModelNum="591" Dt="2018-04-17" Tm="13:53" BGUnit="mg/dL">
+  </DEVICE>
+  <RECENTREC Dt="2014-02-11" Tm="18:47"/>
+  <BGDATA>
+  <BG Val="226" Dt="2014-02-11" Tm="18:47" D="1"/>
+  <BG Val="149" Dt="2014-02-08" Tm="18:23" D="1"/>
+  <BG Val="101" Dt="2014-02-07" Tm="20:56" D="1"/>
+  <BG Val="275" Dt="2014-02-07" Tm="18:49" D="1"/>
+  <BG Val="301" Dt="2014-02-06" Tm="19:13" D="1"/>
+  <BG Val="112" Dt="2014-02-06" Tm="07:20" D="1"/>
+  <BG Val="213" Dt="2014-02-05" Tm="19:42" D="1"/>
+  <BG Val="111" Dt="2014-02-05" Tm="12:02" D="1"/>
+  <BG Val="212" Dt="2014-02-04" Tm="19:18" D="1"/>
+  </BGDATA>
+  <STATISTIC>
+  <ST_TIMERANGE Weeks="2" Dt="2014-02-11"/>
+  <ST_EVALRESULTS Val="9"/>
+  <ST_TSTFREQ1 Val="0.6"/>
+  <ST_TSTFREQ2 Val="1.5"/>
+  <ST_MBG Val="189"/>
+  <ST_SD Val=" 74"/>
+  <ST_HBGI Val="12.3"/>
+  <ST_LBGI Val="0.0"/>
+  </STATISTIC>
+  <CHECK CRC="4816"/>
+  </IMPORT>

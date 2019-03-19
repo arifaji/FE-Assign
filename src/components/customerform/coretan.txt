@@ -1,0 +1,46 @@
+ <React.Fragment>
+        <div className="form-row">
+          <div className="form-group col-md-9">
+            <label>Email</label>
+            <input
+              type="text"
+              className="form-control"
+              // placeholder="Email"
+            />
+          </div>
+          <div className="form-group col-md-3">
+            <label>Password</label>
+            <input
+              type="text"
+              className="form-control"
+              // placeholder="Password"
+            />
+          </div>
+        </div>
+        <div className="form-row">
+          <div className="form-group col-auto">
+            <label>Email</label>
+            <input
+              type="text"
+              className="form-control"
+              // placeholder="Email"
+            />
+          </div>
+          <div className="form-group col-auto">
+            <label>Password</label>
+            <input
+              type="text"
+              className="form-control"
+              // placeholder="Password"
+            />
+          </div>
+          <div className="form-group col-auto">
+            <label>Password</label>
+            <input
+              type="text"
+              className="form-control"
+              // placeholder="Password"
+            />
+          </div>
+        </div>
+      </React.Fragment>

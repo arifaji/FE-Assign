@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form>
+    <rows>
+        <row>
+            <columns>
+                <column>
+                    <keyfield>name</keyfield>
+                    <label>Name</label>
+                    <datatype>text</datatype>
+                    <value>Arif</value>
+                    <required>true</required>
+                    <colstyle>col-md-3</colstyle>
+                </column>
+
+                <column>
+                    <keyfield>mmn</keyfield>
+                    <label>Mother's Maiden Name</label>
+                    <datatype>text</datatype>
+                    <required>false</required>
+                    <colstyle>col-md-9</colstyle>
+                </column>
+            </columns>
+        </row> 
+
+        <row>
+            <columns>
+                <column>
+                    <keyfield>pob</keyfield>
+                    <label>Place of Birth</label>
+                    <datatype>text</datatype>
+                    <required>true</required>
+                </column>
+
+                <column>
+                    <keyfield>npwp</keyfield>
+                    <label>NPWP</label>
+                    <datatype>number</datatype>
+                    <required>true</required>
+                </column>
+            </columns>
+        </row>
+
+        <row>
+            <columns>
+                <column>
+                    <keyfield>dob</keyfield>
+                    <label>Date of Birth</label>
+                    <datatype>date</datatype>
+                    <required>true</required>
+                </column>
+
+                <column>
+                    <keyfield>mob</keyfield>
+                    <label>Phone Number</label>
+                    <datatype>number</datatype>
+                    <required>true</required>
+                </column>
+
+                 <column>
+                    <keyfield>tel</keyfield>
+                    <label>Telephone Number</label>
+                    <datatype>number</datatype>
+                    <required>true</required>
+                </column>
+
+            </columns>
+        </row>
+
+        <row>
+            <columns>
+                <column>
+                    <keyfield>nik</keyfield>
+                    <label>NIK</label>
+                    <datatype>textarea</datatype>
+                    <required>true</required>
+                </column>
+            </columns>
+        </row>
+
+    </rows>
+
+    
+
+</form>

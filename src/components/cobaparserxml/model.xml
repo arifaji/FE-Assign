@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <element>
+        <keyfield>name</keyfield>
+        <label>Name</label>
+        <required>true</required>
+        <type>text</type>
+    </element>
+    <element>
+        <keyfield>pob</keyfield>
+        <label>Place of Birth</label>
+        <required>true</required>
+        <type>text</type>
+    </element>
+    <element>
+        <keyfield>dob</keyfield>
+        <label>Date Of Birth</label>
+        <required>true</required>
+        <type>date</type>
+    </element>
+    <element>
+        <keyfield>nik</keyfield>
+        <label>NIK</label>
+        <required>true</required>
+        <type>number</type>
+    </element>
+    <element>
+        <keyfield>mmn</keyfield>
+        <label>Mother&apos;s Maiden Name</label>
+        <required>true</required>
+        <type>text</type>
+    </element>
+    <element>
+        <keyfield>npwp</keyfield>
+        <label>NPWP</label>
+        <required>true</required>
+        <type>number</type>
+    </element>
+    <element>
+        <keyfield>mob</keyfield>
+        <label>Phone number</label>
+        <required>true</required>
+        <type>number</type>
+    </element>
+    <!-- <element>
+        <keyfield>bankcabang</keyfield>
+        <label>Bank Cabang</label>
+        <required>true</required>
+        <type>select</type>
+    </element> -->
+    <element>
+      <key>bankcabang</key>
+      <label>Bank Cabang</label>
+      <required>false</required>
+      <type>select</type>
+      <options>
+         <key>kcp-jakarta</key>
+         <label>KCP Jakarta</label>
+         <value>kcp-jakarta</value>
+      </options>
+      <options>
+         <key>kcp-tangerang</key>
+         <label>KCP Tangerang</label>
+         <value>kcp-tangerang</value>
+      </options>
+      <options>
+         <key>kcp-bekasi</key>
+         <label>KCP Bekasi</label>
+         <value>kcp-bekasi</value>
+      </options>
+         <options>
+         <key>kcp-lampung</key>
+         <label>KCP Lampung</label>
+         <value>kcp-lampung</value>
+      </options>
+   </element>
+    
+</elements>

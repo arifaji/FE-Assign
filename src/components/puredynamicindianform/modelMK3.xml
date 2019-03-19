@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form>
+    <row>
+        <column>
+            <keyfield>custID</keyfield>
+            <type>idnumber</type>
+            <value>999</value>
+        </column>
+    </row>
+
+    <row>  
+        <column>
+            <keyfield>name</keyfield>
+            <label>Name</label>
+            <detail>Silahkan masukkan nama</detail>
+            <type>text</type>
+            <value>Arif Setyo</value>
+            <required>true</required>    
+        </column>
+
+        <column>
+            <keyfield>bankcabang</keyfield>
+            <label>Bank Cabang</label>
+            <required>false</required>
+            <value>kcp-bekasi</value>
+            <type>select</type>
+            <options>
+                <option>
+                    <keyfield>kcp-jakarta</keyfield>
+                    <label>KCP Jakarta</label>
+                    <value>kcp-jakarta</value>
+                </option>
+                <option>
+                    <keyfield>kcp-tangerang</keyfield>
+                    <label>KCP Tangerang</label>
+                    <value>kcp-tangerang</value>
+                </option>
+                <option>
+                    <keyfield>kcp-bekasi</keyfield>
+                    <label>KCP Bekasi</label>
+                    <value>kcp-bekasi</value>
+                </option>
+                    <option>
+                    <keyfield>kcp-lampung</keyfield>
+                    <label>KCP Lampung</label>
+                    <value>kcp-lampung</value>
+                </option>
+            </options>
+        </column>        
+    </row>
+
+    <row>
+        <column>
+            <keyfield>birthdate</keyfield>
+            <label>Birthdate</label>
+            <detail>Kolom ini untuk memasukkan tanggal lahir anda</detail>
+            <type>date</type>  
+            <value>2009-01-12</value>
+            <required>true</required>         
+        </column>
+
+        <column>
+            <keyfield>gender</keyfield>
+            <label>Jenis Kelamin</label>
+            <type>radio</type>
+            <value>male</value>
+            <required>false</required>
+            <options>
+                <option>
+                    <keyfield>male</keyfield>
+                    <label>Pria</label>                    
+                    <value>male</value>
+                </option>
+                <option>
+                    <keyfield>female</keyfield>
+                    <label>Wanita</label>                    
+                    <value>female</value>
+                </option>
+            </options>
+        </column>
+        
+    </row>
+
+    <row>
+        <column>
+            <keyfield>age</keyfield>
+            <label>Age</label>
+            <type>number</type>  
+            <value>13</value>
+            <required>true</required>         
+        </column>
+
+         <column>
+            <keyfield>kelengkapan</keyfield>
+            <label>Kelengkapan</label>
+            <type>checkbox</type>
+
+            <values>
+                <value>card-ktp</value>
+                <value>card-npwp</value>
+            </values>
+            
+            <required>false</required>
+            <options>
+                <option>
+                    <keyfield>card-ktp</keyfield>
+                    <label>KTP</label>
+                    <value>card-ktp</value>
+                </option>
+                <option>
+                    <keyfield>card-sim</keyfield>
+                    <label>SIM</label>
+                    <value>card-sim</value>
+                </option>
+                <option>
+                    <keyfield>card-npwp</keyfield>
+                    <label>NPWP</label>
+                    <value>card-npwp</value>
+                </option>
+                <option>
+                    <keyfield>card-bpjs</keyfield>
+                    <label>BPJS</label>
+                    <value>card-bpjs</value>
+                </option>
+            </options>
+        </column>
+    </row>
+
+    <row>
+        <column>
+            <keyfield>address</keyfield>
+            <label>Address</label>
+            <detail>Masukkan alamat yang sesuai dengan KTP anda</detail>
+            <type>textarea</type>  
+            <value>Jakarta Selatan, RT.02 RW.03</value>
+            <required>true</required> 
+            <cols>50</cols>
+            <rows></rows>    
+        </column>
+    </row>
+
+    <!-- <row>
+        <column></column>
+    </row> -->
+
+</form>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- http://10.10.18.199:5000/api/customer/?formName=listcustomer -->
+<form>
+    <rows>
+        <row>
+            <columns>
+                <column>
+                    <keyfield>name</keyfield>
+                    <label>name</label>
+                    <required>true</required>
+                    <type>text</type>
+                </column>
+                <column>
+                    <keyfield>pob</keyfield>
+                    <label>Place of Birth</label>
+                    <required>true</required>
+                    <type>text</type>
+                </column>
+                <column>
+                    <keyfield>dob</keyfield>
+                    <label>Date Of Birth</label>
+                    <required>true</required>
+                    <type>date</type>
+                </column>
+                <column>
+                    <keyfield>nik</keyfield>
+                    <label>NIK</label>
+                    <required>true</required>
+                    <type>number</type>
+                </column>
+                <column>
+                    <keyfield>mmn</keyfield>
+                    <label>Mother Maiden Name</label>
+                    <required>true</required>
+                    <type>text</type>
+                </column>
+                <column>
+                    <keyfield>mob</keyfield>
+                    <label>Mobile Number</label>
+                    <required>true</required>
+                    <type>number</type>
+                </column>
+                <column>
+                    <keyfield>npwp</keyfield>
+                    <label>NPWP</label>
+                    <required>true</required>
+                    <type>number</type>
+                </column>
+            </columns>
+        </row>
+        <row>
+            <columns>
+                <column>
+                    <data_id>16</data_id>
+                    <name>Riska</name>
+                    <pob>Lampung</pob>
+                    <dob>1998-08-08</dob>
+                    <nik>31029409202903</nik>
+                    <mmn>Sarina</mmn>
+                    <mob>082093029876</mob>
+                    <npwp>28903293</npwp>
+                </column>
+            </columns>
+        </row>
+        <row>
+            <columns>
+                <column>
+                    <data_id>17</data_id>
+                    <name>Gilda</name>
+                    <pob>Sumatra Selatan</pob>
+                    <dob>1996-07-24</dob>
+                    <nik>3102930192389203</nik>
+                    <mmn>Surtini</mmn>
+                    <mob>08987651699</mob>
+                    <npwp>98599</npwp>
+                </column>
+            </columns>
+        </row>
+        <row>
+            <columns>
+                <column>
+                    <data_id>18</data_id>
+                    <name>Fadhillah</name>
+                    <pob>Bekasi</pob>
+                    <dob>1995-08-08</dob>
+                    <nik>3193029380239802</nik>
+                    <mmn>Pertiwi</mmn>
+                    <mob>08769897654</mob>
+                    <npwp>93820</npwp>
+                </column>
+            </columns>
+        </row>
+    </rows>
+</form>

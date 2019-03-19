@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <element>
+      <key>name</key>
+      <label>Name</label>
+      <props>
+         <required>true</required>
+      </props>
+   </element>
+   <element>
+      <key>age</key>
+      <label>Age</label>
+      <type>number</type>
+   </element>
+   <element>
+      <key>rating</key>
+      <label>Rating</label>
+      <props>
+         <max>5</max>
+         <min>0</min>
+      </props>
+      <type>number</type>
+   </element>
+   <element>
+      <key>qualification</key>
+      <label>Qualification</label>
+   </element>
+</root>
