@@ -47,7 +47,7 @@ class DynamicForm extends Component {
 
     let formUI = [];
 
-    if (typeof model.form === "object") {
+    if (typeof model.form.rows[0].row === "object") {
       let allRow = model.form.rows[0].row;
       for (let i = 0; i < allRow.length; i++) {
         let pushRow = [];
@@ -150,7 +150,8 @@ class DynamicForm extends Component {
           required={required + [] === "true" ? true : false}
           className="form-control"
           defaultValue={this.state[key]}
-          onChange={e => {
+          pattern="[a-zA-Z]"
+          onInput={e => {
             this.onChange(e, key);
           }}
         />
@@ -163,6 +164,7 @@ class DynamicForm extends Component {
           isNumericString={true}
           allowNegative={false}
           decimalSeparator=""
+          required={required + [] === "true" ? true : false}
           value={this.state[key]}
           onChange={e => {
             this.onChange(e, key, "number");
@@ -182,27 +184,31 @@ class DynamicForm extends Component {
         />
       );
     }
-    return inputUI;
+    return <React.Fragment>{inputUI}</React.Fragment>;
   };
 
   render() {
-    let title = this.props.title || "Dynamic Form";
+    const { title, model } = this.props;
     return (
       <div className="container">
-        <h3>{title}</h3>
-        <form
-          className="dynamic-form"
-          onSubmit={e => {
-            this.onSubmit(e);
-          }}
-        >
-          {this.renderForm()}
-          <div className="form-group">
-            <button type="submit" className="btn btn-primary">
-              submit
-            </button>
-          </div>
-        </form>
+        {typeof model.form.rows[0].row === "object" && (
+          <React.Fragment>
+            <h3>{title}</h3>
+            <form
+              className="dynamic-form"
+              onSubmit={e => {
+                this.onSubmit(e);
+              }}
+            >
+              {this.renderForm()}
+              <div className="form-group">
+                <button type="submit" className="btn btn-primary">
+                  submit
+                </button>
+              </div>
+            </form>
+          </React.Fragment>
+        )}
       </div>
     );
   }

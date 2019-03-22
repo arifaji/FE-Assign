@@ -12,33 +12,40 @@ class Search extends Component {
     this.setState({ [key]: e.target.value });
   };
   render() {
+    const { model } = this.props;
     return (
-      <form
-        className=" container"
-        onSubmit={e => {
-          this.onSubmit(e);
-        }}
-      >
-        <div className="row align-items-center">
-          <div className="col">
-            <input
-              className="form-control form-control-lg form-control-borderless"
-              type="search"
-              value={this.state.search}
-              placeholder="Search by NIK"
-              onChange={e => {
-                this.onChange(e, "nik");
-              }}
-            />
-          </div>
+      <React.Fragment>
+        {typeof model.form.rows[0].row[0].columns[0].column === "object" ? (
+          <form
+            className=" container"
+            onSubmit={e => {
+              this.onSubmit(e);
+            }}
+          >
+            <div className="row align-items-center">
+              <div className="col">
+                <input
+                  className="form-control form-control-lg form-control-borderless"
+                  type="search"
+                  value={this.state.search}
+                  placeholder="Search by NIK"
+                  onChange={e => {
+                    this.onChange(e, "nik");
+                  }}
+                />
+              </div>
 
-          <div className="col-auto">
-            <button className="btn btn-lg btn-success" type="submit">
-              Search
-            </button>
-          </div>
-        </div>
-      </form>
+              <div className="col-auto">
+                <button className="btn btn-lg btn-success" type="submit">
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+        ) : (
+          <div>URL not found</div>
+        )}
+      </React.Fragment>
     );
   }
 }

@@ -58,13 +58,14 @@ class ChildTable extends Component {
     let model = this.props.model;
     let bodyRow = [];
     let headRow;
+    let headLong;
 
     try {
       if (typeof model.form === "object") {
         // console.log(model);
         let tableHead = [];
         //-=> Searching For Header ===================================
-        let headLong = model.form.rows[0].row[0].columns[0].column;
+        headLong = model.form.rows[0].row[0].columns[0].column;
         for (let i = 0; i < headLong.length; i++) {
           // console.log(headLong[i].label);
           if (headLong[i].label !== undefined) {
@@ -155,27 +156,45 @@ class ChildTable extends Component {
     } catch (error) {
       console.log(error.message);
     }
-
+    console.log(headLong.length);
     return (
       <React.Fragment>
         <thead>
           <tr>
             {headRow}
             <th colSpan="2" style={{ textAlign: "center" }}>
-              Actione
+              Action
             </th>
           </tr>
         </thead>
-        <tbody>{bodyRow}</tbody>
+        <tbody>
+          {bodyRow + [] === "" ? (
+            <tr>
+              <td colSpan={headLong.length + 1} style={{ textAlign: "center" }}>
+                Tabel Empty
+              </td>
+            </tr>
+          ) : (
+            bodyRow
+          )}
+        </tbody>
       </React.Fragment>
     );
   };
 
   render() {
+    const { model } = this.props;
     return (
-      <div className="container table-responsive">
-        <table className="table">{this.renderTable()}</table>
-      </div>
+      <React.Fragment>
+        {typeof model.form.rows[0].row[0].columns[0].column === "object" && (
+          <div className="container table-responsive">
+            <table className="table">{this.renderTable()}</table>
+            <button onClick={() => this.handleEdits()} className="btn">
+              tambah
+            </button>
+          </div>
+        )}
+      </React.Fragment>
     );
   }
 }
