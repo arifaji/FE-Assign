@@ -11,7 +11,7 @@ class ParentForm extends Component {
     dataID: "",
     modelFor: "",
     renderForm: false,
-    renderSearch: false,
+    renderSearch: "",
     renderTable: false,
     fetchFormXML: "",
     sendFormXML: "",
@@ -287,6 +287,8 @@ class ParentForm extends Component {
       // alert("nuasl");
       this.handleSwitch(key);
       this.handleFormUnmount("renderSearch");
+      this.handleFormUnmount("renderTable");
+      this.handleFormUnmount("renderForm");
     }
   };
 
@@ -329,6 +331,7 @@ class ParentForm extends Component {
           </div>
         </div>
         <br />
+        {this.state.renderSearch === false && <div>Please Wait ...</div>}
         {this.state.renderSearch && (
           <Search
             model={modelTable}

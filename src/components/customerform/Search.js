@@ -11,11 +11,20 @@ class Search extends Component {
   onChange = (e, key) => {
     this.setState({ [key]: e.target.value });
   };
-  render() {
+
+  renderThis = () => {
     const { model } = this.props;
+    try {
+      return typeof model.form.rows[0].row[0].columns[0].column;
+    } catch {
+      return "";
+    }
+  };
+
+  render() {
     return (
       <React.Fragment>
-        {typeof model.form.rows[0].row[0].columns[0].column === "object" ? (
+        {this.renderThis() === "object" ? (
           <form
             className=" container"
             onSubmit={e => {
@@ -43,7 +52,7 @@ class Search extends Component {
             </div>
           </form>
         ) : (
-          <div>URL not found</div>
+          <div>No Result</div>
         )}
       </React.Fragment>
     );

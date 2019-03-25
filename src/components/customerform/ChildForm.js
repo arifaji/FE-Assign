@@ -150,8 +150,7 @@ class DynamicForm extends Component {
           required={required + [] === "true" ? true : false}
           className="form-control"
           defaultValue={this.state[key]}
-          pattern="[a-zA-Z]"
-          onInput={e => {
+          onChange={e => {
             this.onChange(e, key);
           }}
         />
@@ -164,7 +163,6 @@ class DynamicForm extends Component {
           isNumericString={true}
           allowNegative={false}
           decimalSeparator=""
-          required={required + [] === "true" ? true : false}
           value={this.state[key]}
           onChange={e => {
             this.onChange(e, key, "number");

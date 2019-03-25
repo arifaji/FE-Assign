@@ -156,7 +156,7 @@ class ChildTable extends Component {
     } catch (error) {
       console.log(error.message);
     }
-    console.log(headLong.length);
+
     return (
       <React.Fragment>
         <thead>
@@ -171,7 +171,7 @@ class ChildTable extends Component {
           {bodyRow + [] === "" ? (
             <tr>
               <td colSpan={headLong.length + 1} style={{ textAlign: "center" }}>
-                Tabel Empty
+                No Result
               </td>
             </tr>
           ) : (
