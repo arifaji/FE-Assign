@@ -92,6 +92,7 @@ class ParentForm extends Component {
 
   onSubmit = async model => {
     alert(JSON.stringify(model));
+    this.handleFormUnmount("renderTable");
     console.log(this.state.dataID);
     const { dataID, title, modelFor } = this.state;
     if (typeof this.state.dataID === "object") {
@@ -105,6 +106,7 @@ class ParentForm extends Component {
         }
       });
       this.handleSwitch(title);
+      this.onSearch(title);
       this.handleFormUnmount("renderForm");
     } else {
       let url = "http://10.10.18.199:5000/api/customer/" + title;
@@ -117,6 +119,7 @@ class ParentForm extends Component {
         }
       });
       this.handleSwitch(modelFor);
+      this.onSearch(title);
       this.handleFormUnmount("renderForm");
     }
   };
