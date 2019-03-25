@@ -119,7 +119,12 @@ class DynamicForm extends Component {
         );
       }
     }
-    return formUI;
+    return (
+      <React.Fragment>
+        {formUI}
+        {window.scrollTo(0, 99999)}
+      </React.Fragment>
+    );
   };
 
   handleLabel = (colmd, colstyle, label, type, key, required, value) => {
@@ -164,6 +169,7 @@ class DynamicForm extends Component {
           allowNegative={false}
           decimalSeparator=""
           value={this.state[key]}
+          required={required + [] === "true" ? true : false}
           onChange={e => {
             this.onChange(e, key, "number");
           }}
@@ -176,6 +182,7 @@ class DynamicForm extends Component {
           required={required + [] === "true" ? true : false}
           className="form-control"
           value={this.state[key]}
+          required={required + [] === "true" ? true : false}
           onChange={e => {
             this.onChange(e, key);
           }}

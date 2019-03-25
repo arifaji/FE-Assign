@@ -246,6 +246,7 @@ class ParentForm extends Component {
 
   onSearch = async model => {
     this.handleFormUnmount("renderTable");
+    this.handleFormUnmount("renderForm");
     let parseXML = require("xml2js");
     const { modelFor } = this.state;
 
