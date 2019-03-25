@@ -148,10 +148,25 @@ class DynamicForm extends Component {
   handleInput = (type, value, key, required) => {
     let inputUI;
 
-    if (type + [] === "text" || type + [] === "date") {
+    if (type + [] === "text") {
       inputUI = (
         <input
-          type={type}
+          type="text"
+          required={required + [] === "true" ? true : false}
+          className="form-control"
+          pattern="[a-zA-Z ]{1,45}"
+          title="Only A-Z or a-z letter"
+          defaultValue={this.state[key]}
+          onChange={e => {
+            this.onChange(e, key);
+          }}
+        />
+      );
+    }
+    if (type + [] === "date") {
+      inputUI = (
+        <input
+          type="date"
           required={required + [] === "true" ? true : false}
           className="form-control"
           defaultValue={this.state[key]}
